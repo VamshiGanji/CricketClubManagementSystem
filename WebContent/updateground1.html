@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add Grounds</title>
+	<style type="text/css">
+		nav
+		{
+				background-color:white;
+				height:100;
+				width:1340;
+		}
+			
+		.title
+		{
+			background-color:teal;
+			color:#ABF60C;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logonmenu">
+			<a href="adminaccount.html"><img src="cricketlogo.jpg" align="left" height="40" width="125"></a>
+			<ul align="right" class="navbartopmenu">
+				<a href="adminaccount.html">home</a>
+				<a href="changepassword1.html">change password</a>
+				<a href="adminlogin.html">logout</a>
+			</ul>
+		</div>	
+	</nav>
+	<div class="title">
+		<center><h1>Update Ground Details</h1></center>
+	</div>
+	<center><table>
+	<form action="updateground" method="post">
+	<h5 style='color:red'>Invalid Ground ID</h5>
+	<h3>Enter Ground ID</h3>
+	<tr><th>GID:</th><th><input type="text" name="gid"></th></tr>
+	<tr><th><input type="submit" value="submit"></th><th><input type="reset" value="cancel"></th></tr>
+	</form></center>
+</body>
+</html>

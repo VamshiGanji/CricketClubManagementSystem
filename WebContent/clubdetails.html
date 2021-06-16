@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Club Details</title>
+	<style type="text/css">
+		nav
+		{
+				background-color:white;
+				height:70;
+				width:1340;
+		}
+		.title
+		{
+			background-color:teal;
+			color:#ABF60C;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logonmenu">
+			<a href="adminaccount.html"><img src="cricketlogo.jpg" align="left" height="50" width="125"></a>
+			<ul align="right" class="navbartopmenu">
+				<a href="adminaccount.html">home</a>
+				<a href="changepassword1.html">change password</a>
+				<a href="adminlogin.html">logout</a>
+			</ul>
+		</div>	
+	</nav>
+	<div class="title">
+		<center><h1> Club Details </h1></center>
+	</div>
+	<center><table><h3>Enter Club Name</h3>
+	<form action="viewclubdetails" method="post">
+	<tr><th>Club Name:</th><th><input type="text" name="clubname"></th></tr>
+	<tr><th><input type="submit" value="view"></th><th><input type="reset" value="cancel"></th></tr>
+	</form></center>
+</body>
+</html>

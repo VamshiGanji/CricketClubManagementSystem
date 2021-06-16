@@ -1,0 +1,147 @@
+
+<html>
+<head>
+	<style type="text/css">
+		body{
+				background-color:teal;
+		}
+		nav{
+			background-color:white;
+			height:70;
+			width:1340;
+		}	
+		td{
+				color:orange;
+		}
+		.row{
+				background-color:white;
+				height:200;
+				width:1340;
+		}
+		fieldset{
+			height:500;
+			width:600;
+		}
+		legend{
+				color:#ABF60C;
+		}
+		.copyright{
+				background-color:black;
+				color:white;
+		}
+	</style>	
+<body>
+<nav>
+	<div class="logonmenu" color="white" heigth="50" width="1350">
+		<a href="home.html"><img src="cricketlogo.jpg" align="left" height="45" width="100"></a><ul align="right" class="navbartopmenu">
+			<a href="groundbooking.html">Groundbooking</a>
+			<a href="#">Club</a>
+			<a href="batchregistration1.html">Batches</a>
+			<a href="adminlogin.html">Admin</a>
+		</ul>
+	</div>
+</nav>	
+<div>
+	<center>
+	<fieldset height="600" width="1675">
+	<legend><h1>Club Resgistration</h1></legend>
+	<table>
+	<form action="clubdetails" name="clubreg" method="post" onSubmit="return myFunction()">
+	<tr><td>Name:</td><td><input type="text" name="name" class="txtField"/>
+	<span id="name"  class="required"></span></td></tr>
+	<tr><td>Age:</td><td><input type="text" name="age" class="txtField"/>
+	<span id="age"  class="required"></span></td></tr>
+	<tr><td>Mobile:</td><td><input type="text" name="mbno" class="txtField"/>
+	<span id="mbno"  class="required"></span></td></tr>
+	<tr><td>Club Name:</td><td><input type="text" name="clubnam" class="txtField"/>
+	<span id="clubnam"  class="required"></span></td></tr>
+	<tr><td>Locality:</td><td><input type="text" name="loca" class="txtField"/>
+	<span id="loca"  class="required"></span></td></tr>
+	<tr><td>City:</td><td><input type="text" name="city" class="txtField"/>
+	<span id="city"  class="required"></span></td></tr>
+	<tr><td>Role:</td>
+			<td><select name="rol">
+				<option name="bat">Batsmen</option>
+				<option name="bow">Bowler</option>
+				<Option name="allrounder">Allrounder</option>
+			</seelct></td></tr>
+	<tr><td>Previous Club:</td><td><input type="text" name="preClub">(Not Necessary)</td></tr>
+	<tr><td><input type="submit" value="register" onclick="myFunction()"></td><td>
+	<input type="reset" value="cancel"></td></tr>
+	</form>
+	</table>
+	</center>
+</div>
+<div>
+<footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4" align="left">
+        <h3>Contact US</h3>
+        <br>
+        <h4>Our address and contact info here.</h4>
+		<h3>Connect</h3>
+	  </div>
+		<div class="col-sm-4" align="right">
+        <a href="https://www.facebook.com/profile.php?id=100004632704147" class="fa fa-facebook"><img src="img/fb.jpg" height="40" width="40"></a>
+        <a href="https://twitter.com/Vamshik38350609" class="fa fa-twitter"><img src="img/twitter.jpg" height="40" width="40"></a>
+        <a href="https://myaccount.google.com/?utm_source=OGB&tab=mk1&utm_medium=app&pli=1" class="fa fa-google">
+		<img src="img/gmail.jpg" height="40" width="40"></a>
+        <a href="https://www.instagram.com/vamshi_45/" class="fa fa-instagram"><img src="img/insta.jpg" height="40" width="40"></a>
+	  </div>
+    </div>-
+  </footer>
+ </div> 
+  <div class="copyright">
+    <center><p>©2020 | All right reserved by Ganji Vamshi</p></center>
+  </div>
+  <script>
+	function myFunction()
+	{
+		var name,age,mbno,clubnam,loca,City,output=true;
+		name=document.clubreg.name;
+		age=document.clubreg.age;
+		mbno=document.clubreg.mbno;
+		clubnam=document.clubreg.clubnam;
+		loca=document.clubreg.loca;
+		city=document.clubreg.city;
+		if(!name.value)
+		{
+			name.focus();
+			document.getElementById("name").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!age.value)
+		{
+			age.focus();
+			document.getElementById("age").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!mbno.value)
+		{
+			mbno.focus();
+			document.getElementById("mbno").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!clubnam.value)
+		{
+			clubnam.focus();
+			document.getElementById("clubnam").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!loca.value)
+		{
+			loca.focus();
+			document.getElementById("loca").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!city.value)
+		{
+			city.focus();
+			document.getElementById("city").innerHTML = "(required*)";
+			output = false;
+		}
+		return output;
+	}
+	</script>
+</body>
+</html>

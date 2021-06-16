@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	body 
+	{
+			background-color:teal;
+	}	
+	nav
+	{
+			background-color:white;
+			height:70;
+			width:1340;
+	}
+	.title{
+			background-color:teal;
+			color:#ABF60C;
+	}
+	th{
+			color:orange;
+			font-family:Times New Roman;
+	}
+	fieldset
+	{
+			height:500;
+			width:600;
+	}
+	table
+	{
+		postion:relative;
+		top:10px;
+		left:10px;
+		right:10px;
+	}
+	legend{
+			color:#ABF60C;
+	}
+	.row
+	{
+				background-color:white;
+				height:200;
+				width:1340;
+	}
+	.copyright
+	{
+			background-color:black;
+			font-color:white;
+	}	
+	</style>
+</head>
+<body>
+<nav>
+<div class="logonmenu" color="white" heigth="50" width="1350">
+		<a href="home.html"><img src="cricketlogo.jpg" align="left" height="45" width="100"></a>
+		<ul align="right" class="navbartopmenu">
+			<a href="groundbooking.html">Ground Booking</a>
+			<a href="clubregistration.html">Club</a>
+			<a href="batchregistration1.html">Batches</a>
+			<a href="adminlogin.html">Admin</a>
+		</ul>
+	</div>
+</nav>
+	<center>
+	<fieldset>
+	<legend>
+	<h1>Ground Booking</h1>
+	</legend>
+	<table>
+	<form action="groundbooking" name="booking" method="post" onSubmit="return myFunction()"></td></tr>
+	<tr><th>Name:</th><td colspan="2"><input type="text" name="name" class="txtField"/>
+	<span id="name"  class="required"></span></td></tr>
+	<tr><th>Mobile No:</th><td colspan="2"><input type="text" name="mbno" class="txtField"/>
+	<span id="mbno"  class="required"></span></td></tr>
+	<tr><th>E-Mail:</th><td colspan="2"><input type="text" name="usremail" class="txtField"/>
+	<span id="usremail"  class="required"></span></td></tr>
+	<tr><th>Venue:</th><td colspan="2"><select name="venue">
+			<option name="chidambaram">chidambaramstadium</option>
+			</select></td></tr>	
+	<tr><th>Time Slot:</th><td><select name="ts">
+			<option name="slot1">10:00am-12:00pm</option>
+			<option name="slot2">2:00pm-4:00pm</option>
+			<option name="slot3">4:00pm-6:00pm</option>
+			</select></td></tr>
+			<tr><th>Purpose:</th><td><select name="purpose">
+			<option name="cricket">Cricket Match</option>
+			<option name="meet">Meetings</option>
+			<option name="event">Events</option>
+			</select></td></tr>
+	</table>
+	<table>
+	<tr><th>Date:</th><td><select id="date" name="date" class="required">
+									<option value="1" name="1">1</option>
+									<option value="2" name="2">2</option>
+									<option value="3" name="3">3</option>
+									<option value="4" name="4">4</option>
+									<option value="5" name="5">5</option>
+									<option value="6" name="6">6</option>
+									<option value="7" name="7">7</option>
+									<option value="8" name="8">8</option>
+									<option value="9" name="9">9</option>
+									<option value="10" name="10">10</option>
+									<option value="11" name="11">11</option>
+									<option value="12" name="12">12</option>
+									<option value="13" name="13">13</option>
+									<option value="14" name="14">14</option>
+									<option value="15" name="15">15</option>
+									<option value="16" name="16">16</option>
+									<option value="17" name="17">17</option>
+									<option value="18" name="18">18</option>
+									<option value="19" name="19">19</option>
+									<option value="20" name="20">20</option>
+									<option value="21" name="21">21</option>
+									<option value="22" name="22">22</option>
+									<option value="23" name="23">23</option>
+									<option value="24" name="24">24</option>
+									<option value="25" name="25">25</option>
+									<option value="26" name="26">26</option>
+									<option value="27" name="27">27</option>
+									<option value="28" name="28">28</option>
+									<option value="29" name="29">29</option>
+									<option value="30" name="30">30</option>
+									<option value="31" name="31">31</option>
+							</select></td>
+							<th>Month:</th><td><select id="month" name="month" class="required">
+									<option value="1" name="jan">1</option>
+									<option value="2" name="feb">2</option>
+									<option value="3" name="mar">3</option>
+									<option value="4" name="apr">4</option>
+									<option value="5" name="may">5</option>
+									<option value="6" name="june">6</option>
+									<option value="7" name="july">7</option>
+									<option value="8" name="aug">8</option>
+									<option value="9" name="sep">9</option>
+									<option value="10" name="oct">10</option>
+									<option value="11" name="nov">11</option>
+									<option value="12" name="dec">12</option>
+									</select></td>
+				</tr>
+			<tr><th colspan="3"><input type="submit" onclick="myFunction()" Value="Book"></th>
+			<th><input type="reset" value="cancel"></th></tr>	
+	</table>
+	</form>
+	</fieldset></center>
+	
+	<div>
+	<footer class="container-fluid text-center">
+		<div class="row">
+		<div class="col-sm-4" align="left">
+			<h3>Contact US</h3>
+			<br>
+			<h4>Our address and contact info here.</h4>
+			<h3>Connect</h3>
+		</div>
+		<div class="col-sm-4" align="right">
+			<a href="https://www.facebook.com/profile.php?id=100004632704147" class="fa fa-facebook"><img src="img/fb.jpg" height="40" width="40"></a>
+			<a href="https://twitter.com/Vamshik38350609" class="fa fa-twitter"><img src="img/twitter.jpg" height="40" width="40"></a>
+			<a href="https://myaccount.google.com/?utm_source=OGB&tab=mk1&utm_medium=app&pli=1" class="fa fa-google">
+			<img src="img/gmail.jpg" height="40" width="40"></a>
+			<a href="https://www.instagram.com/vamshi_45/" class="fa fa-instagram"><img src="img/insta.jpg" height="40" width="40"></a>
+		</div>
+    </div>-
+  </footer>
+ </div> 
+ <div class="copyright">
+    <center><p>©2020 | All right reserved by Ganji Vamshi</p></center>
+ </div>
+ <script>
+	function myFunction()
+	{
+		var name,mbno,usremail,output=true;
+		name=document.booking.name;
+		mbno=document.booking.mbno;
+		usremail=document.booking.usremail;
+		var d=new Date();
+		var date=d.getDate();
+		var month=d.getMonth();
+		var x=document.getElementById("date").value;	
+		var y=document.getElementById("month").value;
+		if(!name.value)
+		{
+			name.focus();
+			document.getElementById("name").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!mbno.value)
+		{
+			mbno.focus();
+			document.getElementById("mbno").innerHTML = "(required*)";
+			output = false;
+		}
+		if(!usremail.value)
+		{
+			usremail.focus();
+			document.getElementById("usremail").innerHTML = "(required*)";
+			output = false;
+		}
+		if(date>x)
+		{
+			alert("select correct date");
+			output=false;
+		}
+		if(month>y)
+		{	
+			alert("select correct month");
+			output=false;
+		}
+		return output;
+	}
+	</script>
+</body>
+</html>	

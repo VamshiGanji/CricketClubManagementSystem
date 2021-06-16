@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><title>View Grounds</title>
+	<style type="text/css">
+		nav
+		{
+		
+				background-color:white;
+				height:70;
+				width:1340;
+		}
+			
+		.title
+		{
+			background-color:teal;
+			color:#ABF60C;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logonmenu">
+			<a href="adminaccount.html"><img src="cricketlogo.jpg" align="left" height="50" width="125"></a>
+			<ul align="right" class="navbartopmenu">
+				<a href="adminaccount.html">home</a>
+				<a href="changepassword1.html">change password</a>
+				<a href="adminlogin.html">logout</a>
+			</ul>
+		</div>	
+	</nav>
+	<center><h4 style="color:red">NO GROUNDS AVAILABLE IN THIS LOCATION </h4></center>
+	<div class="title">
+		<center><h1> Available Grounds</h1></center>
+	</div>
+	<center><table><h3>Select Location</h3>
+	<form action="viewgrounds" method="post">
+	<tr><th>Location:</th><th><select name="loc">
+		<option name="Abad">Ahmedabad</option>
+		<option name="ban">Banglore</option>
+		<option name="che">Chennai</option>
+		<option name="del">Delhi</option>
+		<option name="guw">Guwahati</option>
+		<option name="hyd">Hyderabad</option>
+		<option name="jai">Jaipur</option>
+		<option name="Kochi">Kochi</option>
+		<option name="kol">Kolkata</option>
+		<option name="mum">Mumbai</option>
+		</select></th></tr>
+	<tr><th><input type="submit" value="submit"></th><th><input type="reset" value="cancel"></th></tr>
+	</form></center>
+</body>
+</html>

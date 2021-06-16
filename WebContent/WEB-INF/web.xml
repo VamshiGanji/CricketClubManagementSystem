@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	
+	<welcome-file-list>
+		<welcome-file>home.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+  		<servlet-name>adminlogin</servlet-name>
+  		<servlet-class>cricketclub.AdminConfig</servlet-class>
+	</servlet>
+	<servlet-mapping>
+  		<servlet-name>adminlogin</servlet-name>
+  		<url-pattern>/adminconfig</url-pattern>
+  	</servlet-mapping>
+	
+	<servlet>	
+		<servlet-name>cricketgroundbooking</servlet-name>
+  		<servlet-class>cricketclub.ConfirmBooking</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>cricketgroundbooking</servlet-name>
+  		<url-pattern>/groundbooking</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>	
+		<servlet-name>clubreg</servlet-name>
+  		<servlet-class>cricketclub.ConfirmBRegistration</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>clubreg</servlet-name>
+  		<url-pattern>/clubdetails</url-pattern>
+  	</servlet-mapping>
+	
+	<servlet>	
+		<servlet-name>batchreg</servlet-name>
+  		<servlet-class>cricketclub.ConfirmBatchReg</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>batchreg</servlet-name>
+  		<url-pattern>/batchdetails</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>	
+		<servlet-name>addgrounds</servlet-name>
+  		<servlet-class>cricketclub.AddGround</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>addgrounds</servlet-name>
+  		<url-pattern>/addground</url-pattern>
+  	</servlet-mapping>
+	
+	<servlet>	
+		<servlet-name>updategrounds</servlet-name>
+  		<servlet-class>cricketclub.UpdateGround</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>updategrounds</servlet-name>
+  		<url-pattern>/updateground</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>	
+		<servlet-name>setgrounddetails</servlet-name>
+  		<servlet-class>cricketclub.SetGroundDetails</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>setgrounddetails</servlet-name>
+  		<url-pattern>/setgrounddetails</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>	
+		<servlet-name>viewground</servlet-name>
+  		<servlet-class>cricketclub.ViewGround</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>viewground</servlet-name>
+  		<url-pattern>/viewgrounds</url-pattern>
+  	</servlet-mapping>
+	
+	<servlet>		
+		<servlet-name>viewgroundbookings</servlet-name>
+  		<servlet-class>cricketclub.ViewGroundBookings</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>viewgroundbookings</servlet-name>
+  		<url-pattern>/viewbookings</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>		
+		<servlet-name>batchdetails</servlet-name>
+  		<servlet-class>cricketclub.ViewBatchDetails</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>batchdetails</servlet-name>
+  		<url-pattern>/viewbatchdetails</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>		
+		<servlet-name>clubmembers</servlet-name>
+  		<servlet-class>cricketclub.ViewClubDetails</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>clubmembers</servlet-name>
+  		<url-pattern>/viewclubdetails</url-pattern>
+  	</servlet-mapping>
+
+	<servlet>		
+		<servlet-name>changepasswords</servlet-name>
+  		<servlet-class>cricketclub.ChangePassword</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>changepasswords</servlet-name>
+  		<url-pattern>/changepassword</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>		
+		<servlet-name>grounds</servlet-name>
+  		<servlet-class>cricketclub.AvailableGrounds</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>grounds</servlet-name>
+  		<url-pattern>/availablegrounds</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>		
+		<servlet-name>clubs</servlet-name>
+  		<servlet-class>cricketclub.ClubDetails</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>clubs</servlet-name>
+  		<url-pattern>/clubmembers</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>		
+		<servlet-name>batches</servlet-name>
+  		<servlet-class>cricketclub.BatchesDetails</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>batches</servlet-name>
+  		<url-pattern>/batchmembers</url-pattern>
+  	</servlet-mapping>
+  	
+  	<welcome-file-list>
+		<welcome-file>home.html</welcome-file>
+	</welcome-file-list>
+ </web-app>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add Grounds</title>
+	<style type="text/css">
+		div
+		{
+				background-color:white;
+				height:70;
+				width:1340;
+		}	
+		.title
+		{
+			background-color:teal;
+			color:#ABF60C;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logonmenu">
+			<a href="adminaccount.html"><img src="cricketlogo.jpg" align="left" height="35" width="125"></a>
+			<ul align="right" class="navbartopmenu">
+				<a href="adminaccount.html">home</a>
+				<a href="changepassword1.html">change password</a>
+				<a href="adminlogin.html">logout</a>
+			</ul>
+		</div>	
+	</nav>
+	<div class="title">
+		<center>
+		<h1>Ground Details</h1></center>
+	</div>
+	<div><center><table>
+	<form action="addground" method="post" name="addgrnds" onSubmit="return myFunction()">
+	<tr><th>GID:</th><th><input type="text" name="gid" class="textField"/>
+	<span id="gid" class="required"></span></th></tr>
+	<tr><th>Ground Name:</th><th><input type="text" name="gname" class="textField"/>
+	<span id="gname" class="required"></span></th></tr>
+	<tr><th>Capacity:</th><th><input type="text" name="capacity" class="textField"/>
+	<span id="capacity" class="required"></span></th></tr>
+	<tr><th>Location:</th><th><input type="text" name="loc" class="textField"/>
+	<span id="loc" class="required"></span></th></tr>
+	<tr><th>Rent:</trh><th><input type="text" name="rent" class="textField"/>
+	<span id="rent" class="required"></span></th></tr>
+	<tr><th><input type="submit" value="submit" onclick="myFunction()"></th><th><input type="reset" value="cancel"></th></tr>
+	</form></table></center>
+	</div>
+	<script>
+		function myFunction()
+		{
+			var gid,gname,capacity,loc,rent,output="true";
+			gid=document.addgrnds.gid;
+			gname=document.addgrnds.gname;
+			capacity=document.addgrnds.capacity;
+			loc=document.addgrnds.loc;
+			rent=document.addgrnds.rent;
+			if(!gid.value)
+			{
+				gid.focus();
+				document.getElementById("gid").innerHTML="(REQUIRED*)";
+				output=false;
+			}
+			if(!gname.value)
+			{
+				gname.focus();
+				document.getElementById("gname").innerHTML="(REQUIRED*)";
+				output=false;
+			}
+			if(!capacity.value)
+			{
+				capacity.focus();
+				document.getElementById("capacity").innerHTML="(REQUIRED*)";
+				output=false;
+			}
+			if(!loc.value)
+			{
+				loc.focus();
+				document.getElementById("loc").innerHTML="(REQUIRED*)";
+				output=false;
+			}
+			if(!rent.value)
+			{
+				rent.focus();
+				document.getElementById("rent").innerHTML="(REQUIRED*)";
+				output=false;
+			}
+			output false;	
+		}
+	</script>
+</body>
+</html>
